@@ -1,16 +1,6 @@
 name: Farmenv-AI
 version: "1.0"
 
-python: 3.10
-
-dependencies:
-  - pip:
-      - flask
-      - numpy
-      - pandas
-      - scikit-learn
-      - openai
-
 endpoints:
   reset: /reset
   step: /step

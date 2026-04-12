@@ -3,20 +3,20 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "farmenv-ai-openenv"
-version = "1.0.0"
-description = "OpenEnv Smart Farm environment for AI agent learning"
+name = "farmenv-ai"
+version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "openai>=1.6.0",
+    "openenv-core>=0.2.0",
     "flask",
     "flask-cors",
     "numpy",
     "requests",
     "gunicorn",
-    "openai",
 ]
 
-[tool.openenv]
-name = "farmenv-ai-openenv"
-version = "1.0.0"
-entry_point = "app.py"
+[project.scripts]
+server = "app:app"

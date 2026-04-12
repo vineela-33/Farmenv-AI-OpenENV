@@ -1,9 +1,9 @@
+openenv-core>=0.2.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+openai>=1.6.0
 flask
 flask-cors
 numpy
 requests
 gunicorn
-openai
-fastapi>=0.104.0
-uvicorn>=0.24.0
-openenv-core>=0.2.0
